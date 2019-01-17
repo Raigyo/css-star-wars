@@ -12,16 +12,48 @@
     }
     75% {
         transform: rotateX(20deg)  translateZ(0) translateY(-375px);
+
     }
-    100% {
+    90% {
+      opacity: 1;
+    }
+    99% {
         transform: rotateX(20deg)  translateZ(0) translateY(-500px);
     }
+    100% {
+        opacity: 0;
+        animation-play-state: paused;
+    }
 }
+/*@keyframes starShine {
+    0% {
+
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 50;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}*/
 body{
   background-color: black;
+  background-image: url("stars.png");
+  animation: starShine 20s;
 }
 h1{
  color: yellow;
+ text-align: center;
 }
 p{
  color: yellow;
