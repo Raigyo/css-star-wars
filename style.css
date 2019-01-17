@@ -2,7 +2,7 @@
 @keyframes textAnim {
     0% {
         /*transform: translateY(0px);*/
-        transform: rotateX(20deg)  translateZ(0) translateY(0px);
+        transform: rotateX(20deg)  translateZ(42px) translateY(250px);
     }
     /*25% {
         transform: rotateX(20deg)  translateZ(0) translateY(-125px);
@@ -18,7 +18,7 @@
       opacity: 1;
     }
     99% {
-        transform: rotateX(20deg)  translateZ(0) translateY(-500px);
+        transform: rotateX(20deg)  translateZ(42px) translateY(-420px);
     }
     100% {
         opacity: 0;
@@ -53,30 +53,25 @@
   z-index: -1;
   animation: starShine 2s infinite;
 }
-/*body{
-  background-color: black;
-  background-image: url("stars.png");
-  animation: starShine 20s;
-}*/
 h1{
  color: yellow;
  text-align: center;
 }
 p{
  color: yellow;
+ text-align: justify;
 }
 .wrapper
 {
   padding: 20px;
-  perspective: 400px;
+  perspective: 500px;
+  /*perspective-origin: top;*/
   display: flex;
   justify-content: center;
 
 }
 .content{
-  padding: 100px;
-  width: 80%;
-  /*border: 1px solid;*/
-
+  padding: 200px 200px 0px 200px;
+  width: 60%;
   animation: textAnim 20s;
 }
