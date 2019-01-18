@@ -1,77 +1,53 @@
 @charset "utf-8";
-@keyframes textAnim {
-    0% {
-        /*transform: translateY(0px);*/
-        transform: rotateX(20deg)  translateZ(42px) translateY(250px);
-    }
-    /*25% {
-        transform: rotateX(20deg)  translateZ(0) translateY(-125px);
-    }
-    50% {
-        transform: rotateX(20deg)  translateZ(0) translateY(-250px);
-    }
-    75% {
-        transform: rotateX(20deg)  translateZ(0) translateY(-375px);
-
-    }*/
-    90% {
-      opacity: 1;
-    }
-    99% {
-        transform: rotateX(20deg)  translateZ(42px) translateY(-420px);
-    }
-    100% {
-        opacity: 0;
-        /*animation-play-state: paused;*/
-    }
-}
-@keyframes starShine {
-    0% {
-
-        opacity: 1;
-    }
-    25% {
-        opacity: 0.99;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 0.99;
-    }
-    90% {
-      opacity: 1;
-    }
-    100% {
-        opacity: 0.99;
-    }
-}
-#bckgr{
-  background-color: black;
-  background-image: url("stars.png");
-  position: absolute;
-  z-index: -1;
-  animation: starShine 2s infinite;
-}
 h1{
  color: yellow;
  text-align: center;
 }
-p{
+p {
  color: yellow;
  text-align: justify;
 }
-.wrapper
-{
-  padding: 20px;
-  perspective: 500px;
-  /*perspective-origin: top;*/
-  display: flex;
-  justify-content: center;
+@keyframes textIntro {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes textAnim {
+    0% {
+        transform: perspective(500px) rotateX(25deg) translateY(-125px);
+    }
+    90% {
+    opacity: 1;
+    }
+    99% {
+        transform: perspective(500px) rotateX(25deg) translateY(-420px);
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
+body{
+  background-image: url("stars.png");
+  z-index: -1;
+}
+
+.intro{
+  /*opacity: 0;
+  animation-duration: 5s;
+  animation-name: textIntro;*/
 }
 .content{
-  padding: 200px 200px 0px 200px;
-  width: 60%;
+  padding: 200px;
+  text-align: center;
+  /*opacity:0;
+  animation-duration: 20s;
+  animation-delay: 4s;*/
   animation: textAnim 20s;
 }
