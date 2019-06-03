@@ -1,3 +1,12 @@
+![Becode logo](https://raw.githubusercontent.com/Raigyo/react-character-manager/master/img/becode-logo.png)
+
+*February 2019*
+
+> 🔨  CSS learning in pair coding. Make an intro in "Star Wars style" 
+
+* * *
+
+
 # Ta ta ta tata, ta ta ta tata, ta ta ta taToh, Ta ta ta taaaaa !
 
 ![Générique de star wars](star-wars.jpg)
